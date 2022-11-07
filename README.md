@@ -38,3 +38,7 @@ I'd also like to add a debug page to monitor the status of the weather station w
 
 The wesbite is not the focus of this project, though, so some of those changes might not happen. My main focus is the weather station, API, and database.
 
+![image](https://user-images.githubusercontent.com/98580719/200285546-7c835dce-e068-40e8-bf8b-bff2086a42e1.png)
+![image](https://user-images.githubusercontent.com/98580719/200285642-1ce8838a-6f8c-4cbc-927f-5b1c406344ee.png)
+
+
