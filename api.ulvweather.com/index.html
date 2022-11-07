@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body>
+		<h1>API for ULV Weather</h1>
+		<h2>This api provides access to the live and past weather data recorded</h2>
+		<a href="https://www.ulvweather.com">Return to ULV Weather Home</a><br><br>
+		Data is recorded and uploaded every 60 seconds
+		Any data that shows a '-1' means there is an error. No result will show a '-1' otherwise<br>
+		Wind direction shows where the wind is coming from ('N' means blowing from 'N', not to 'N')
+		<br>
+		Data Recorded:
+		<table style="border-style: solid">
+			<tr style="border-style: solid"><th>Data</th><th>Alias</th><th>Unit</th><th>Note</th></tr>
+			<tr style="border-style: solid"><td>ID Number</td><td>ID</td><td></td><td>Unique ID Number of Data Recording</td></tr>
+			<tr style="border-style: solid"><td>Time Recorded</td><td>time</td><td>UNIX timestamp</td><td></td></tr>
+			<tr style="border-style: solid"><td>Station Status</td><td>status</td><td></td><td>1 = OK, 0 = Error</td></tr>
+			<tr style="border-style: solid"><td>Testing Mode</td><td>testing</td><td></td><td>1 = Testing, 0 = Operating<br>Do not use data marked for testing</td></tr>
+			<tr style="border-style: solid"><td>Temerature</td><td>temp</td><td>Degrees Celcius</td><td></td></tr>
+			<tr style="border-style: solid"><td>Humidity</td><td>humidity</td><td>Percentage</td><td></td></tr>
+			<tr style="border-style: solid"><td>Pressure</td><td>pressure</td><td>hPa</td><td></td></tr>
+			<tr style="border-style: solid"><td>Wind Speed</td><td>windSpeed</td><td>MPH</td><td></td></tr>
+			<tr style="border-style: solid"><td>Wind Degree</td><td>windDegree or windAngle</td><td>Degrees</td><td></td></tr>
+			<tr style="border-style: solid"><td>Wind Direction</td><td>windDirection</td><td>N/A</td><td></td></tr>
+			<tr style="border-style: solid"><td>Rainfall Volume</td><td>rainVolume</td><td>in</td><td></td></tr>
+			<tr style="border-style: solid"><td>Rain Rate</td><td>rainRateHourly</td><td>in/hr</td><td>Do Not Use (Not Finished)</td></tr>
+			<tr style="border-style: solid"><td>Rainfall Sum*</td><td>rainSum</td><td>in</td><td>Total rainfall within given period</td></tr>
+			<tr style="border-style: solid"><td>CPU Temp</td><td>cpuTemp</td><td>Degrees Celcius</td><td>Current only shows 30, WIP</td></tr>
+		</table>
+		* These variables will not be returned by all or any functions or scripts
+		<br><br>
+		List of api functions (http://api.ulvweather.com/[function name].php)
+		<table style="border-style: solid">
+			<tr><th>Function Name</th><th>Function Description</th></tr>
+			<tr><td>currentWeatherData</td><td>Returns most recent processed/averaged/summed data to be displayed</td></tr>
+			<tr><td>queryWeatherData</td><td>Returns most recent recording</td></tr>
+			<tr><td>lastHourWeatherData</td><td>Returns all recordings within the 60 minutes prior to the request (Approx. 60 rows)</td></tr>
+			<tr><td>lastHourWeatherAvg</td><td>Returns an average of the last hours data in one row.<br>Some columns will return a sum, such as rainVolume</td></tr>
+		</table>
+	</body>
+</html>
