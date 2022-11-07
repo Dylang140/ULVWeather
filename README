@@ -9,6 +9,21 @@ Main Project Compoments:
   - Website for viewing live data
   
   
+Languages:
+  - PHP
+    - API
+  - Python
+    - Weather station
+  - HTML
+    - For the API homepage, and the main website
+  - Javascript
+    - Main site
+  - CSS
+  - SQL
+  
+I opted to use PHP for the backend server stuff. This project is not too complex, and the traffic will of course be extremely low (just me pretty much).
+For that reason, I felt setting up a NodeJS server or something like that was not necessary.
+  
 This project is not yet complete! I am working on the weather station still. I want to be sure it is reliable enough to mount on top of a building 
 on-campus, so I am testing it indoors first. I also need to figure out how to mount it and all that.
 
