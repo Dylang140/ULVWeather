@@ -1,5 +1,8 @@
 This is my senior project for my degree in Computer Science at the University of La Verne
 
+ulvweather.com
+api.ulvweather.com
+
 A project to collect live weather data from the University of La Verne campus and then store and display it on a website.
 
 Main Project Compoments:
